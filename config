@@ -199,7 +199,7 @@ bar {
 for_window [class="^.*"] border pixel 0
 
 
-exec feh --bg-fill '/home/unclescrooge/Downloads/pexels-matheus-natan-3394939.jpg'
+exec --no-start-up-id feh --bg-fill '/home/unclescrooge/Downloads/pexels-matheus-natan-3394939.jpg'
 
 # i3lock
 bindsym $mod+Shift+Delete exec i3lock -i /home/unclescrooge/Downloads/levon-vardanyan-ihUVzI4f5To-unsplash.png
