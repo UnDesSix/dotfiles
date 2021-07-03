@@ -18,7 +18,7 @@ sudo apt-get install i3-gaps;
 # NORMINETTE
 python3 -m pip install --upgrade pip setuptools;
 python3 -m pip install norminette;
-sudo mv /home/mlarboul/.local/bin/norminette /usr/bin;
+sudo mv /home/$USER/.local/bin/norminette /usr/bin;
 
 # OH MY ZSH
 sudo apt-get zsh;
@@ -29,5 +29,6 @@ echo "Please log out and come back";
 # USEFUL
 # git config --global user.name "USERNAME"
 # git config --global user.name "EMAIL"
-# echo >> .zshrc "mail=\"mlarboul@student.42.fr\""
-# echo >> .zshrc "user=\"mlarboul\""
+# echo >> .zshrc "mail=\"$USER@student.42.fr\""
+# echo >> .zshrc "user=\"$USER\""
+# echo >> .zshrc "alias rm='rm -i'"
