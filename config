@@ -55,6 +55,9 @@ bindsym $mod+Shift+d exec discord
 # start Nautilus
 bindsym $mod+Shift+n exec nautilus
 
+# start VS Code
+bindsym $mod+Shift+v exec code
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
