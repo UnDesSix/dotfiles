@@ -13,7 +13,7 @@ sudo snap install code --classic;
 # i3-GAPS
 sudo apt-get install i3;
 sudo add-apt-repository ppa:kgilmer/speed-ricer;
-sudo apt-get install i3-gaps;
+sudo apt-get install i3-gaps feh;
 
 # NORMINETTE
 python3 -m pip install --upgrade pip setuptools;
