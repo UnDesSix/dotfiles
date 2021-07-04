@@ -215,3 +215,7 @@ smart_gaps inverse_outer
 
 # Hide edge borders only if there is one window with no gaps
 hide_edge_borders smart_no_gaps
+
+# Used for terminal kitty transparency
+exec_always compton
+exec --no-startup-id compton -b -f
