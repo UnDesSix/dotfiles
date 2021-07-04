@@ -20,6 +20,10 @@ python3 -m pip install --upgrade pip setuptools;
 python3 -m pip install norminette;
 sudo mv /home/$USER/.local/bin/norminette /usr/bin;
 
+# VIM
+cp -r vim ../.vim;
+cp vimrc ../.vimrc;
+
 # OH MY ZSH
 sudo apt-get zsh;
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
