@@ -3,7 +3,7 @@
 sudo apt-get update
 
 # DEPEDENCIES
-sudo apt-get install vim make gcc clang git nasm wget curl \
+sudo apt-get install vim make valgrind gcc clang git nasm wget curl \
 xorg libxext-dev libbsd-dev pip python3-testresources -y;
 ssh-keygen;
 
