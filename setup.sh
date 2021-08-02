@@ -4,7 +4,7 @@ sudo apt-get update
 
 # DEPEDENCIES
 sudo apt-get install vim make valgrind gcc clang git nasm wget curl \
-xorg libxext-dev libbsd-dev pip python3-testresources -y;
+xorg libxext-dev libbsd-dev pip python3-testresources compton -y;
 ssh-keygen;
 
 # VS CODE
