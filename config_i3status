@@ -1,0 +1,81 @@
+####################################
+
+general {
+        output_format = "i3bar"
+        markup = "pango"
+        interval = 4
+
+        colors = false
+        color_good = '#dacfc7'
+          color_degraded = '#FF5566'
+            color_bad = '#FF1122'
+ }
+
+####################################
+
+order += "disk /"
+# order += "load"
+order += "memory"
+order += "cpu_temperature all"
+order += "volume master"
+order += "battery 0"
+order += "wireless wlp3s0"
+order += "tztime local"order += "tztime local2"
+
+####################################
+
+memory {
+        format = " Used RAM: %percentage_used "
+        threshold_degraded = " 10% "
+        format_degraded = " MEMORY: %free "
+}
+
+volume master {    format = "  %volume "
+    format_muted = "     "
+    device = "default"
+    mixer = "Master"    mixer_idx = 0
+}
+
+wireless wlp3s0 {
+        # %quality at %essid, %bitrate / %frequency) %ip
+        format_up = "  %essid "
+        format_down = "     "
+}
+
+cpu_temperature all {
+    format = "  %degrees°C "
+}
+
+load {
+    format = "  %1min "
+}
+
+disk "/" {
+    format = "  %avail / %total"
+    prefix_type = custom
+    low_threshold = 20
+    threshold_type = percentage_avail
+}
+
+battery 0 {
+    format = " %status %percentage "
+    path = /sys/class/power_supply/BAT0/uevent
+    format_down = ""
+    last_full_capacity = true
+    integer_battery_capacity = true
+    low_threshold = 11
+    threshold_type = percentage
+    hide_seconds = true
+    status_chr = ""
+    status_bat = ""
+    status_unk =  ""
+    status_full = ""
+}
+
+tztime local {
+    format = "  %H:%M:%S "
+}
+
+tztime local2 {
+    format = "  %d/%m "
+}
